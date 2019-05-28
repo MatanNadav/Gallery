@@ -57,4 +57,5 @@ function onEmailSubmit() {
     document.querySelector('.email-input').value = '';
     var greet = document.querySelector('.greet');
     greet.style.display = 'block';
+
 }
