@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    text-align: center;
+}
+
+.admin-container {
+    height: 100vh;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: firebrick;
+}
+
+table {
+    padding: 10px;
+}
+
+tr {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+td {
+    border: 2px solid black;
+    padding: 5px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/admin-css.css">
+    <title>Document</title>
+</head>
+
+<body onload="onAdminInit()">
+
+    <h1>Admin control</h1>
+    <div class="sorter">
+        <select onchange="onSetSort(this.value)">
+            <option></option>
+            <option>Name</option>
+            <option>Last login</option>
+        </select>
+    </div>
+    <div class="admin-container">
+        <table>
+            <thead>
+                <th>User name</th>
+                <th>Password</th>
+                <th>Last log in</th>
+            </thead>
+            <tbody class="user-list">
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+    <script src="js/admin-controller.js"></script>
+    <script src="js/admin-service.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/user-controller.js"></script>
+    <script src="js/user-service.js"></script>
+</body>
+
+</html>

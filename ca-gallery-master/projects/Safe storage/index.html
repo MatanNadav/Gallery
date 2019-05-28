@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Safe content</title>
+</head>
+
+<body onload="onInit()">
+    <div class="login-container">
+
+        <h1>Safe Storage</h1>
+        <h3>login</h3>
+        <section class="login">
+            <h4>Username</h4>
+            <input type="text" class="user" name="Username" required minlength="4" maxlength="8" size="30">
+            <h4>Password</h4>
+            <input type="password" class="pass" name="Password" required minlength="4" maxlength="8" size="30"
+                onkeyup="onDoLogin(event)">
+            <button class="Login" onclick="onDoLogin(event)">Login</button>
+        </section>
+        <h2 class="login-welcome">Welcome to your secret content 🡇</h2>
+    </div>
+
+    <div class="logged-in">
+        <h1>Hello </h1>
+
+        <section class="secret-content">
+            <img src="img/IMG_1340.PNG">
+        </section>
+        <button class="logout" onclick="onDoLogout()">Logout</button>
+        <a href="admin.html">Link to admin page</a>
+    </div>
+
+
+    <script src="js/util.js"></script>
+    <script src="js/user-controller.js"></script>
+    <script src="js/user-service.js"></script>
+</body>
+
+</html>
